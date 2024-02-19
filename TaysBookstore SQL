@@ -1,0 +1,19 @@
+CREATE TABLE TaysBookstore (id INTEGER, name TEXT, aisle NUMERIC, quantity NUMERIC, PriceInDollars NUMERIC);
+INSERT INTO TaysBookstore VALUES (1, ' Adult Romance', 1, 120, 18);
+INSERT INTO TaysBookstore VALUES (2, 'Adult Fantasy', 2, 105, 20);
+INSERT INTO TaysBookstore VALUES (3, 'Self Help',3, 85, 30);
+INSERT INTO TaysBookstore VALUES (4, 'Cook Books',3, 70, 30);
+INSERT INTO TaysBookstore VALUES (5, 'Thriller', 4, 115, 20);
+INSERT INTO TaysBookstore VALUES (6, 'Poetry', 5, 65, 15);
+INSERT INTO TaysBookstore VALUES (7, 'Young Adult Romance', 6, 80, 15);
+INSERT INTO TaysBookstore VALUES (8, 'Young Adult Fantasy', 6, 75, 15);
+INSERT INTO TaysBookstore VALUES (9, 'Young Adult Thriller', 6, 70, 15);
+INSERT INTO TaysBookstore VALUES (10, 'Childrens Cook Books', 7, 20, 15);
+INSERT INTO TaysBookstore VALUES (11, 'History', 8, 130, 30);
+INSERT INTO TaysBookstore VALUES (12, 'Mystery', 9, 95, 20);
+INSERT INTO TaysBookstore VALUES (13, 'Sci Fi', 9, 70, 20);
+INSERT INTO TaysBookstore VALUES (14, 'Historical Fiction', 8, 100, 20);
+INSERT INTO TaysBookstore VALUES (15, 'Religion', 10, 70, 30);
+
+SELECT * FROM TaysBookstore;
+SELECT name, quantity FROM TaysBookstore WHERE PriceInDollars > 15;
